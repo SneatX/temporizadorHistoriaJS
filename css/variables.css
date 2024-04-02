@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 :root{
-    --color--one: #fff;
+    --color--one: #1C1D21;
+    --color--two: #00F6ED;
+    --color--three: #ffffff;
+    --color--four: #2e2e2e;
 }

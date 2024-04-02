@@ -5,3 +5,75 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: var(--color--one);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__timer{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+.main__timer > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+    color: var(--color--three);
+}
+.main__timer section div h1{
+    font-size: 2vw;
+}
+
+
+.main__timer input{
+    border: 0;
+    height: 30vh;
+    width: 10vw;
+    font-size: 10vw;
+    text-align: center;
+    border-radius: 25px;
+    font-family: "Orbitron", sans-serif;
+    color: var(--color--two);
+    background-color: var(--color--four);
+}
+.main__timer p{
+    font-size: 10vw;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.main__timer button{
+    margin-top: 100px;
+    font-size: 2em;
+    border: 0;
+    border-radius: 25px;
+    width: 10vw;
+    height: 4vw;
+    font-family: "Orbitron", sans-serif;
+    background-color: var(--color--four);
+    color: var(--color--three);
+    outline: 2px solid var(--color--three);
+}
+
+.main__timer button:hover{
+    background-color: var(--color--three);
+    color: var(--color--four);
+    outline: 2px solid var(--color--four);
+    cursor: pointer;
+}
