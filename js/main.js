@@ -63,12 +63,18 @@ function reducirTiempo(){
         else{
             console.log('termina')
             clearInterval(temporizador)
+            eliminarCronometro()
         }
     }
 
     imprimirCronometro()
 }
 
+function eliminarCronometro(){
+    document.querySelector(".main__timer").style.display = "none"
+    document.querySelector(".main__information").style.display = "block"
+    document.querySelector(".main").style.display = "block"
+}
 
 function imprimirCronometro(){ //convertimos a string y imprimimos en la posicion correspondiente
     if(segundos < 10){

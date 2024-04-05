@@ -57,9 +57,12 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
-
+input[type="number"] {
+    caret-color: transparent; /* Oculta el cursor */
+}
 .main__timer button{
-    margin-top: 100px;
+    bottom: 100px;
+    position: absolute;
     font-size: 2em;
     border: 0;
     border-radius: 25px;
@@ -76,4 +79,84 @@ input[type=number]::-webkit-outer-spin-button {
     color: var(--color--four);
     outline: 2px solid var(--color--four);
     cursor: pointer;
+}
+
+.main__information{
+    display: none;
+    padding: 2vw 10vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+.main__information p{
+    color: var(--color--three);
+    font-size: 2em;
+    text-align: justify;
+}
+
+.information__title{
+    color: var(--color--two);
+    text-align: center;
+    font-size: 10em;
+    font-family: "Orbitron", sans-serif;
+}
+
+.information__content > *{
+    margin-bottom: 2vw;
+}
+
+.content__box1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.content__box1 > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    margin-bottom: 1vw;
+}
+
+.content__box1 img{
+    width: 80%;
+}
+
+.content__box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.content__box2 img{
+    width: 20%;
+}
+
+.content__box3 {}
+
+.box3__imgs{
+    display: flex;
+    align-items: center;
+}
+
+.box3__imgs > *{
+    width: 33%;
+}
+
+
+.content__box3 img{
+    width: 100%;
+    padding: 100px;
+}
+
+.information__content2 > *{
+    padding-bottom: 2vw;
+}
+
+.information__content2 h2{
+    color: var(--color--three);
+    text-align: center;
+    font-size: 5em;
+    font-family: "Orbitron", sans-serif;
 }
